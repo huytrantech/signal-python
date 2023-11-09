@@ -8,7 +8,7 @@ def read_and_play_wav(file_path):
     sample_rate, audio_data = wavfile.read(file_path)
 
     # Phát âm thanh
-    # play_audio(audio_data, sample_rate)
+    play_audio(audio_data, sample_rate)
 
     # Vẽ tín hiệu trong miền thời gian
     plot_time_domain(audio_data, sample_rate)
@@ -16,8 +16,6 @@ def read_and_play_wav(file_path):
     # Biến đổi Fourier và vẽ tín hiệu trong miền tần số
     plot_frequency_domain(audio_data, sample_rate)
 
-    # Biến đổi STFT và vẽ tín hiệu trong miền tần số
-    plot_frequency_domain_stft(audio_data, sample_rate)
 
 def play_audio(audio_data, sample_rate):
     # Phát âm thanh
